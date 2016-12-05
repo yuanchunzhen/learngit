@@ -1,0 +1,25 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.1'
+
+    defaultConfig {
+        applicationId "com.yunduo.huopinmerchantapp"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "huopinmerchantapp_1_0"
+    }
+
+}
+
+
+repositories {
+    flatDir { dirs 'libs' }
+}
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.+'
+    compile 'com.google.android.gms:play-services:8.4.0'
+}

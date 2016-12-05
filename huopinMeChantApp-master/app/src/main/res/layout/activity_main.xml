@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yunduo.huopinmerchantapp.MainActivity">
+
+    <!-- 主界面容器 -->
+    <FrameLayout
+        android:id="@+id/main_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1PX"
+        android:background="@color/gray_e7e7e7" />
+
+    <RadioGroup
+        android:id="@+id/main_radio_group"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_height="wrap_content" >
+        <RadioButton
+            android:id="@+id/main_shop"
+            style="@style/MainRadionBtn"
+            android:checked="true"
+            android:drawableTop="@drawable/dianpu_selector"
+            android:text="店铺"
+            />
+        <RadioButton
+            android:id="@+id/main_vip"
+            style="@style/MainRadionBtn"
+            android:drawableTop="@drawable/huiyuan_selector"
+            android:text="会员"
+            />
+        <RadioButton
+            android:id="@+id/main_form"
+            style="@style/MainRadionBtn"
+            android:drawableTop="@drawable/dingdan_selector"
+            android:text="订单"
+            />
+        <RadioButton
+            android:id="@+id/main_data"
+            style="@style/MainRadionBtn"
+            android:drawableTop="@drawable/huiyuan_selector"
+            android:text="数据"
+            />
+        <RadioButton
+            android:id="@+id/main_my"
+            style="@style/MainRadionBtn"
+            android:drawableTop="@drawable/wode_selector"
+            android:text="我的"
+            />
+    </RadioGroup>
+</LinearLayout>
